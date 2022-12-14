@@ -145,9 +145,37 @@ input, select, textarea {
 		text-decoration: none;
 	}
 
-		a:hover {
-			border-bottom-color: transparent;
-		}
+    /* unvisited link */
+    a:link {
+      color: inherit;
+      text-decoration: underline;
+      border-bottom: none;
+      font-weight: normal;
+    }
+
+    /* visited link */
+    a:visited {
+      color: inherit;
+      text-decoration: underline;
+      border-bottom: none;
+      font-weight: normal;
+    }
+
+    /* mouse over link */
+    a:hover {
+      color: inherit;
+      text-decoration: underline;
+      border-bottom: none;
+      font-weight: bold;
+    }
+
+    /* selected link */
+    a:active {
+      color: inherit;
+      text-decoration: underline;
+      border-bottom: none;
+      font-weight: bold;
+    }
 
 	strong, b {
 		color: #fff;
@@ -2487,9 +2515,12 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #ed4933;
+			background-color: #183143;
 			box-shadow: none !important;
+            border: solid #ffffff;
 			color: #ffffff !important;
+            text-decoration: none;
+            font-weight: bold;
 		}
 
 			input[type="submit"].primary:hover,
@@ -2497,7 +2528,10 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #ef5e4a !important;
+				background-color: #8AABB0 !important;
+                box-shadow: none !important;
+                border: solid #183143;
+                color: #183143 !important;
 			}
 
 			input[type="submit"].primary:active,
@@ -2505,7 +2539,10 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #eb341c !important;
+				background-color: #2B7F87 !important;
+                box-shadow: none !important;
+                border: solid #ffffff;
+                color: #ffffff !important;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -3472,6 +3509,8 @@ input, select, textarea {
 				display: block;
 				height: inherit;
 				line-height: inherit;
+                text-decoration: none;
+                font-weight: bold;
 			}
 
 				@media screen and (max-width: 736px) {
